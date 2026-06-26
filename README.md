@@ -130,7 +130,7 @@ Simply update the ticker symbol and provide the appropriate revenue data source.
 
 ### Tesla Analysis
 
-*(Add screenshot here after uploading)*
+
 
 ```text
 screenshots/tesla_graph.png
@@ -138,7 +138,6 @@ screenshots/tesla_graph.png
 
 ### GameStop Analysis
 
-*(Add screenshot here after uploading)*
 
 ```text
 screenshots/gamestop_graph.png
