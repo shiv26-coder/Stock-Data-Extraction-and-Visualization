@@ -1,4 +1,4 @@
-# 📈 Stock Data Extraction and Visualization
+# 📈 Stock Market Data Extraction & Visualization
 
 <p align="center">
 
@@ -6,51 +6,55 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge\&logo=pandas)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge)
 ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-Web%20Scraping-green?style=for-the-badge)
-![yfinance](https://img.shields.io/badge/Yahoo%20Finance-yfinance-red?style=for-the-badge)
+![Yahoo Finance](https://img.shields.io/badge/Yahoo%20Finance-yfinance-red?style=for-the-badge)
 
 </p>
 
 ---
 
-## 📌 Overview
+# 📌 Overview
 
-This project demonstrates how to extract, clean, analyze, and visualize financial data using Python.
+This project demonstrates how to **extract, clean, and visualize financial market data** using Python by combining API-based data retrieval with web scraping.
 
-It combines **API-based data extraction** with **web scraping** to retrieve:
+The workflow includes:
 
-* 📈 Historical stock prices using the Yahoo Finance API (`yfinance`)
-* 💰 Quarterly revenue data extracted from HTML webpages using BeautifulSoup
-* 📊 Comparative visualizations using Matplotlib
+* 📈 Downloading historical stock prices using the **Yahoo Finance API (`yfinance`)**
+* 🌐 Extracting company revenue data through **BeautifulSoup web scraping**
+* 🧹 Cleaning and preprocessing financial datasets using **Pandas**
+* 📊 Visualizing stock prices and revenue trends with **Matplotlib**
 
-Although this project showcases **Tesla (TSLA)** and **GameStop (GME)** as examples, the same workflow can be applied to **any publicly traded company supported by Yahoo Finance** by simply changing the stock ticker and revenue source.
+The repository demonstrates the workflow using **Tesla (TSLA)** and **GameStop (GME)** as example companies. The stock data currently covers the **last two years** available from Yahoo Finance, while the revenue data comes from an educational web-scraping dataset provided in the IBM Data Science course.
 
----
-
-## 🚀 Features
-
-* Historical stock price extraction
-* Revenue data extraction through web scraping
-* Data cleaning and preprocessing
-* Financial trend visualization
-* Reusable workflow for different companies
-* Beginner-friendly and modular Python code
+> **Note:** Since the stock price data and the educational revenue dataset cover different time periods, the visualizations are intended to demonstrate data extraction, preprocessing, and visualization techniques rather than direct time-aligned financial comparison.
 
 ---
 
-## 🛠 Technologies Used
+# 🚀 Features
+
+* Download the latest two years of historical stock prices
+* Extract revenue data from HTML webpages
+* Clean and preprocess financial data
+* Generate stock price visualizations
+* Generate historical revenue visualizations
+* Modular and reusable code structure
+* Easily adaptable for other stock tickers
+
+---
+
+# 🛠 Technologies Used
 
 | Technology    | Purpose              |
 | ------------- | -------------------- |
 | Python        | Programming Language |
 | Pandas        | Data Manipulation    |
 | yfinance      | Stock Market Data    |
-| Requests      | Download HTML Pages  |
+| Requests      | HTTP Requests        |
 | BeautifulSoup | Web Scraping         |
 | Matplotlib    | Data Visualization   |
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 Stock-Data-Extraction-and-Visualization/
@@ -60,13 +64,14 @@ Stock-Data-Extraction-and-Visualization/
 ├── requirements.txt
 ├── screenshots/
 │   ├── tesla_graph.png
-│   └── gamestop_graph.png
-└── output/
+│   ├── gamestop_graph.png
+│   └── terminal_output.png
+└── .gitignore
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
 Clone the repository:
 
@@ -74,13 +79,13 @@ Clone the repository:
 git clone https://github.com/shiv26-coder/Stock-Data-Extraction-and-Visualization.git
 ```
 
-Move into the project directory:
+Navigate to the project directory:
 
 ```bash
 cd Stock-Data-Extraction-and-Visualization
 ```
 
-Install the required libraries:
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -88,9 +93,9 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+# ▶️ Usage
 
-Run the project using:
+Run the project:
 
 ```bash
 python stock_analysis.py
@@ -98,54 +103,53 @@ python stock_analysis.py
 
 The script will:
 
-* Download historical stock prices
-* Extract revenue information
-* Clean and preprocess the data
+* Download the latest two years of stock prices
+* Retrieve revenue data through web scraping
+* Clean the datasets
 * Generate stock price and revenue graphs
 
 ---
 
-## 📈 Example Companies
+# 📊 Example Companies
 
 This repository demonstrates the workflow using:
 
 * Tesla (TSLA)
 * GameStop (GME)
 
-The same approach can be extended to other companies such as:
+The same approach can be extended to other companies supported by Yahoo Finance, such as:
 
 * Apple (AAPL)
 * Microsoft (MSFT)
 * Amazon (AMZN)
 * NVIDIA (NVDA)
-* Google (GOOGL)
-* Reliance Industries
-* Tata Motors
+* Alphabet (GOOGL)
 
-Simply update the ticker symbol and provide the appropriate revenue data source.
+For other companies, you would also need an appropriate revenue data source.
 
 ---
 
-## 📊 Sample Output
+# 📷 Sample Output
 
-### Tesla Analysis
+## Tesla Analysis
 
-
-
-```text
-screenshots/tesla_graph.png
-```
-
-### GameStop Analysis
-
-
-```text
-screenshots/gamestop_graph.png
-```
+![Tesla Graph](screenshots/tesla_graph.png)
 
 ---
 
-## 📚 Learning Outcomes
+## GameStop Analysis
+
+![GameStop Graph](screenshots/gamestop_graph.png)
+
+---
+
+## Program Output
+
+![Terminal Output](screenshots/terminal_output.png)
+
+---
+
+# 📚 Learning Outcomes
 
 This project demonstrates practical experience in:
 
@@ -153,13 +157,13 @@ This project demonstrates practical experience in:
 * API integration
 * Web scraping
 * Data cleaning
-* Exploratory data analysis
-* Data visualization
+* Exploratory Data Analysis (EDA)
+* Financial data visualization
 * Python programming
 
 ---
 
-## 📦 Requirements
+# 📦 Requirements
 
 ```text
 pandas
@@ -169,7 +173,7 @@ beautifulsoup4
 matplotlib
 ```
 
-Install dependencies using:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -177,24 +181,25 @@ pip install -r requirements.txt
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-* Interactive Plotly dashboards
-* Support for multiple companies simultaneously
-* Automatic revenue extraction for additional companies
-* Export charts as images and PDF reports
-* Build an interactive dashboard using Streamlit
-* Perform financial trend and statistical analysis
+* Fetch real-time company revenue through financial APIs
+* Synchronize stock price and revenue over matching time periods
+* Compare multiple companies simultaneously
+* Add technical indicators (SMA, EMA, RSI, MACD)
+* Export charts automatically
+* Develop an interactive Streamlit dashboard
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Shivansh Misra**
 
-Electronics and Communication Engineering (ECE) Student
+B.Tech in Electronics and Communication Engineering (ECE)
+
 SRM Institute of Science and Technology
 
 ---
 
-⭐ If you found this project helpful, consider giving the repository a star!
+⭐ If you found this project useful, consider giving it a star on GitHub.
